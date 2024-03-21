@@ -65,8 +65,8 @@ export default function Login() {
         </div>
         <div>
           <div className="space-y-6">
-            <h2 className="text-center text-3xl font-extrabold text-gray-900" style={{ fontFamily: 'NATS' }}>Welcome back!</h2>
-            <p className="text-center text-sm text-light-gray-1">We are glad you're back to learn with daresni platform</p>
+            <h2 className="text-center text-3xl font-extrabold text-gray-900" style={{ fontFamily: 'NATS' }}>Content de te revoir!</h2>
+            <p className="text-center text-sm text-light-gray-1">Nous sommes heureux que vous soyez de retour pour apprendre avec la plateforme Daresni</p>
             <form className="mt-8 space-y-6" onSubmit={handleLogin}>
               <div className="flex flex-col space-y-2 mb-10">
                 <label className="text-sm font-medium leading-none" htmlFor="email">Email</label>
@@ -85,13 +85,13 @@ export default function Login() {
                 </div>
               </div>
               <div className="flex flex-col space-y-2 mb-10">
-                <label className="text-sm font-medium leading-none" htmlFor="password">Password</label>
+                <label className="text-sm font-medium leading-none" htmlFor="password">Mot de passe</label>
                 <div className={`relative ${passwordClicked ? 'slideRight' : ''}`}>
                   <LockIcon className="absolute left-3 top-1/2 -translate-y-1/2 text-black" />
                   <Input
                     className="pl-10 border-light-gray-1"
                     id="password"
-                    placeholder="Password"
+                    placeholder="Mot de passe"
                     type="password"
                     onClick={handlePasswordClick}
                     value={formData.password}
@@ -103,14 +103,14 @@ export default function Login() {
               <div>
                 {formData.error && <p className="text-red-500">{formData.error}</p>}
                 <Button type="submit" className="w-full bg-purple-added border-blue border-[1px] hover:bg-blue text-white mb-10">
-                  Login
+                  Se connecter
                 </Button>
               </div>
             </form>
             <p className="text-center text-light-gray-1 border-t border-light-gray-1 text-sm">
-              Don't have an account?
+            Vous n'avez pas de compte ?
               <Link className="text-purple-added" href="/signup">
-                Signup for free!
+              Inscription gratuite!
               </Link>
             </p>
           </div>

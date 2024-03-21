@@ -6,12 +6,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/Components/ui/button";
 import Image from 'next/image';
 import Link from "next/link";
-import academic_student from '../detailspage/images/academic_student.png';
-import languages_studies from '../detailspage/images/languages_studies.png';
-import tutor_student from '../detailspage/images/tutor_student.png';
-import young_women from '../detailspage/images/young-woman-holding-tablet-white_114579-76708 1.png';
+import academic_student from '../images/academic_student.png';
+import languages_studies from '../images/languages_studies.png';
+import tutor_student from '../images/tutor_student.png';
+import young_women from '../images/young-woman-holding-tablet-white_114579-76708 1.png';
 
-export default function DetailsPage() {
+export default function ServicesPage() {
   const serviceImages = [
     tutor_student,
     languages_studies,
@@ -46,31 +46,31 @@ export default function DetailsPage() {
   return (
     <div  >
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <h2 class="text-3xl font-extrabold text-center mb-8  border-b-2 border-light-gray pb-4 mt-6">Our services</h2>
+    <h2 class="text-3xl font-extrabold text-center mb-8  border-b-2 border-light-gray pb-4 mt-10">Nos services</h2>
     <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8  xl:grid-cols-3 2xl:grid-cols-3">
   <ServiceCard
-    title="Tutor student"
-    description="Our tutoring services help students achieve their academic goals with personalized one-on-one sessions."
+    title="Prof-étudiant"
+    description="Nos services aident les étudiants à atteindre leurs objectifs académiques grâce à des séances individuelles personnalisées."
     image={serviceImages[0]}
   />
   <ServiceCard
-    title="Academic studies"
-    description="Dive deep into your field of study with our expert academic guidance and resources."
+    title="Études académiques"
+    description="Plongez profondément dans votre domaine d’études grâce à nos conseils et ressources académiques experts."
     image={serviceImages[1]} 
   />
   <ServiceCard
-    title="Languages Studies"
-    description="Expand your horizons by learning a new language with our experienced language instructors."
+    title="Études de langues"
+    description="Élargissez vos horizons en apprenant une nouvelle langue avec nos professeurs de langue expérimentés."
     image={serviceImages[2]}
   />
 </div>
-      <h2 className="text-3xl justify-center font-extrabold text-center mt-24 mb-10 border-b-2 border-light-gray pb-4">How daresni works</h2>
+      <h2 className="text-3xl justify-center font-extrabold text-center mt-24 mb-10 border-b-2 border-light-gray pb-4">Comment fonctionne Daresni</h2>
       <div className="flex justify-center items-center space-x-40 mb-12">
-        <StepCard icon={<LaptopIcon />} text="Find your tutor" />
+        <StepCard icon={<LaptopIcon />} text="Trouvez votre professeur" />
         <StepArrow />
-        <StepCard icon={<SchoolIcon />} text="Start learning." />
+        <StepCard icon={<SchoolIcon />} text="Commencer à apprendre" />
         <StepArrow />
-        <StepCard icon={<RepeatIcon />} text="Repeat" />
+        <StepCard icon={<RepeatIcon />} text="Répéter" />
       </div>
       </div>
       
@@ -85,18 +85,18 @@ export default function DetailsPage() {
   </div>
   <div class=" bg-[#6f42c1] p-8  w-screen h-[52vh]  ">  
   <div className="text-black ">
-     <h2 class="text-3xl mb-4">Become a tutor</h2>
+     <h2 class="text-3xl mb-4 font-bold">Devenez un professeur</h2>
      <p class="mb-6 text-black">
-      Earn money sharing your expert knowledge with students. Sign up to start tutoring online with Preply.
+     Gagnez de l'argent en partageant vos connaissances d'expert avec les étudiants. Inscrivez-vous pour commencer à donner des cours en ligne avec Preply
     </p>
     <ul class="mb-8 text-black list-disc pl-4">
-      <li class="mb-2">Find new students</li>
-      <li class="mb-2">Grow your business</li>
-      <li class="mb-2">Get paid securely</li>
+      <li class="mb-2">Trouver de nouveaux étudiants</li>
+      <li class="mb-2">Développez votre entreprise</li>
+      <li class="mb-2">Soyez payé en toute sécurité</li>
     </ul>
     </div>
-    < Button className=" text-white hover:bg-gray-600  rounded-3xl w-52 h-10 bg-black  space-x-8">
-      <span>Become a tutor</span>
+    < Button className=" text-white hover:bg-gray-600  rounded-3xl w-60 h-10 bg-black  space-x-8">
+      <span>Devenez un professeur</span>
       <ArrowRightIcon className="text-white" />
       </Button>
 
@@ -104,9 +104,9 @@ export default function DetailsPage() {
 </div>
     <div className=" min-h-screen">
     <div className="py-12">
-        <h1 className="text-3xl font-extrabold text-center border-b-2 border-light-gray pb-4  mb-16">Learn languages with us!</h1>
+        <h1 className="text-3xl font-extrabold text-center border-b-2 border-light-gray pb-4  mb-16">Apprenez des langues avec nous !</h1>
         <div className="flex justify-center space-x-6 mb-20 ">
-      {['Arabic', 'French', 'English'].map((language, index) => (
+      {['Arabe', 'Français', 'Englais'].map((language, index) => (
         <button key={index}>
           <Card className="w-[300px] h-32 pt-8">
             <CardContent>
@@ -114,7 +114,7 @@ export default function DetailsPage() {
                 <h2 className="text-2xl font-semibold">{language}</h2>
                 <ChevronRightIcon className="text-purple-added" />
               </div>
-              <p className="text-sm text-gray-600">{lessonCounts[index]} lessons</p>
+              <p className="text-sm text-gray-600">{lessonCounts[index]} cours</p>
             </CardContent>
           </Card>
         </button>
@@ -124,27 +124,27 @@ export default function DetailsPage() {
   <div className="max-w-7xl mx-auto px-4 border-b border-light-gray-1 pb-8">
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-black justify-items-center">
       <div className="justify-self-center">
-        <h3 className="text-lg font-semibold mb-4">About</h3>
+        <h3 className="text-lg font-semibold mb-4">À propos</h3>
         <ul>
           <li className="mb-2">
             <Link className="underline hover:text-purple-added" href="#">
-              Who are we
+            Qui sommes nous ?
             </Link>
           </li>
           <li className="mb-2">
             <Link className="underline hover:text-purple-added" href="#">
-              Work at daresni
+            Travailler chez Daresni
             </Link>
           </li>
           <li>
             <Link className="underline hover:text-purple-added" href="#">
-              How daresni works
+            Comment fonctionne Daresni ?
             </Link>
           </li>
         </ul>
       </div>
       <div className="justify-self-center">
-        <h3 className="text-lg font-semibold mb-4">Daresni social</h3>
+        <h3 className="text-lg font-semibold mb-4">Réseaux sociaux Daresni</h3>
         <ul>
           <li className="mb-2">
             <Link className="underline hover:text-purple-added" href="#">
@@ -164,41 +164,37 @@ export default function DetailsPage() {
         </ul>
       </div>
       <div className="justify-self-center">
-        <h3 className="text-lg font-semibold mb-4">Students</h3>
+        <h3 className="text-lg font-semibold mb-4">Étudiants</h3>
         <ul>
           <li>
             <Link className="underline hover:text-purple-added" href="#">
-              Arabic test level
+            Niveau de test d'arabe
             </Link>
           </li>
           <li className="mb-2">
             <Link className="underline hover:text-purple-added" href="#">
-              Academic study
+            Études académiques
             </Link>
           </li>
           <li>
             <Link className="underline hover:text-purple-added" href="#">
-              Student discounts
+             Réduction pour étudiant
             </Link>
           </li>
         </ul>
       </div>
       <div className="justify-self-center">
-        <h3 className="text-lg font-semibold mb-4">Tutors</h3>
+        <h3 className="text-lg font-semibold mb-4">Profs</h3>
         <ul>
           <li className="mb-2">
             <Link className="underline hover:text-purple-added" href="#">
-              Tutor application
+            Demande d'enseignement 
             </Link>
           </li>
-          <li className="mb-2">
-            <Link className="underline hover:text-purple-added" href="#">
-              Teach math for CEM
-            </Link>
-          </li>
+          
           <li>
             <Link className="underline hover:text-purple-added" href="#">
-              See all tutors subjects
+            Voir tous les sujets des profs
             </Link>
           </li>
         </ul>
