@@ -47,12 +47,17 @@ export default function Login() {
   const [emailClicked, setEmailClicked] = useState(false);
   const [passwordClicked, setPasswordClicked] = useState(false);
 
+  const [emailFocused, setEmailFocused] = useState(false);
+  const [passwordFocused, setPasswordFocused] = useState(false);
+
   const handleEmailClick = () => {
     setEmailClicked(true);
+    setEmailFocused(true);
   };
 
   const handlePasswordClick = () => {
     setPasswordClicked(true);
+    setPasswordFocused(true);
   };
 
   return (
@@ -70,14 +75,15 @@ export default function Login() {
             <form className="mt-8 space-y-6" onSubmit={handleLogin}>
               <div className="flex flex-col space-y-2 mb-10">
                 <label className="text-sm font-medium leading-none" htmlFor="email">Email</label>
-                <div className={`relative ${emailClicked ? 'slideRight' : ''}`}>
+                <div className={`relative ${emailFocused ? 'slideRight' : ''}`}>
                   <UserIcon className="absolute left-3 top-1/2 -translate-y-1/2 text-black" style={{ size:24 }} />
                   <Input
                     className="pl-10 border-light-gray-1"
                     id="email"
                     placeholder="Email"
                     type="email"
-                    onClick={handleEmailClick}
+                    onFocus={handleEmailClick}
+                    onBlur={() => setEmailFocused(false)} 
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     required
@@ -86,14 +92,15 @@ export default function Login() {
               </div>
               <div className="flex flex-col space-y-2 mb-10">
                 <label className="text-sm font-medium leading-none" htmlFor="password">Mot de passe</label>
-                <div className={`relative ${passwordClicked ? 'slideRight' : ''}`}>
+                <div className={`relative ${passwordFocused ? 'slideRight' : ''}`}>
                   <LockIcon className="absolute left-3 top-1/2 -translate-y-1/2 text-black" />
                   <Input
                     className="pl-10 border-light-gray-1"
                     id="password"
                     placeholder="Mot de passe"
                     type="password"
-                    onClick={handlePasswordClick}
+                    onFocus={handlePasswordClick}
+                    onBlur={() => setPasswordFocused(false)} 
                     value={formData.password}
                     onChange={(e) => setFormData({ ...formData, password: e.target.value })}
                     required

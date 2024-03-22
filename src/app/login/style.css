@@ -1,12 +1,30 @@
 .slideRight {
-    animation: slideRightAnimation 0.5s forwards;
-  }
-  
-  @keyframes slideRightAnimation {
-    from {
-      transform: translateX(0);
+  animation: slideRightAnimation 0.5s forwards;
+  transition: margin 0.5s;
+}
+
+@keyframes slideRightAnimation {
+  0% {
+      width: 100%;
+      margin-left: 0;
     }
-    to {
-      transform: translateX(10%);
+    100% {
+      width: 85%;
+      margin-left: 15%;
     }
   }
+  .slideLeft {
+      animation: slideLeftAnimation 0.5s forwards;
+      transition: margin 0.5s;
+    }
+    
+    @keyframes slideLeftAnimation {
+      0% {
+        width: 85%;
+        margin-left: 15%;
+      }
+      100% {
+        width: 100%;
+        margin-left:0%;
+      }
+    }
