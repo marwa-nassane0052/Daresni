@@ -1,4 +1,5 @@
-[
+[   
+
     { "id":1,
       "nom de module": "Mathématiques",
       "niveau d'étude": "Lycée",
@@ -8,6 +9,7 @@
       "NB max":20,
       "Durée de séance":"2h",
       "nb seances":" 2 séance par semaine",
+      "valide":"true",
       "groupes": [
         {
           "id": 1,
@@ -78,6 +80,7 @@
       "NB max":20,
       "Durée de séance":"2h",
       "nb seances":" 2 séance par semaine",
+      "valide":"true",
       "groupes": [
         {
           "id": 3,
@@ -106,6 +109,7 @@
       "NB max":20,
       "Durée de séance":"2h",
       "nb seances":" 2 séance par semaine",
+      "valide":"true",
       "groupes": [
         {
           "id": 4,
@@ -183,6 +187,7 @@
       "NB max":20,
       "Durée de séance":"2h",
       "nb seances":" 2 séance par semaine",
+      "valide":"true",
       "groupes": [
         {
           "id": 4,
@@ -262,6 +267,8 @@
       "NB max":20,
       "Durée de séance":"2h",
       "nb seances":" 2 séance par semaine",
+      "valide":"true",
+   
       "groupes": [
         {
           "id": 4,
@@ -332,6 +339,39 @@
           "lien de cours": "https://example.com/cours_langue_francaise"
         }
       ]
-    }
+    },
+    { "id":6,
+      "nom de module": "Histoire-geographie",
+      "niveau d'étude": "Lycée",
+      "année d'étude": "2eme",
+      "spécialité": "les langues",
+      "Durée":"2mois",
+      "NB max":20,
+      "Durée de séance":"2h",
+      "nb seances":" 2 séance par semaine",
+      "valide":"false"
+  },
+    { "id":7,
+    "nom de module": "Histoire-geographie",
+    "niveau d'étude": "Lycée",
+    "année d'étude": "2eme",
+    "spécialité": "les langues",
+    "Durée":"2mois",
+    "NB max":20,
+    "Durée de séance":"2h",
+    "nb seances":" 2 séance par semaine",
+    "valide":"false"
+  },
+    { "id":8,
+    "nom de module": "Histoire-geographie",
+    "niveau d'étude": "Lycée",
+    "année d'étude": "2eme",
+    "spécialité": "les langues",
+    "Durée":"2mois",
+    "NB max":20,
+    "Durée de séance":"2h",
+    "nb seances":" 2 séance par semaine",
+    "valide":"false"
+  }
   ]
   

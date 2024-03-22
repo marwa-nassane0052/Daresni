@@ -50,8 +50,8 @@ export default function Sidebar() {
       <div className="w-full  h-14 text-md flex items-center justify-center mb-4" style={{ color: '#6610F2' }}>
         <div className="cursor-pointer rounded-2xl bg-[#EBEEF2] w-[90%] h-10 text-md flex items-center">
           <div className='mr-12 ml-8'>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAzUlEQVR4nO3VMQ6DMBBEUR8gkmlyxSlySArvRWhTmgskTQpAWKLD4/wnbUHHlyxNSgCAO2mqs6b1s7tcI7nRMeJ3yY0OP779fj3fD+V1acXedvnkxZiGlIGfVq5xqRiAN7HsnZHnIMYoIaUZwrID8CCWvTPyHMQYJaQ0Q1h2AB7EsndGnoMYo4SUZgjLDgD4R1/JBBLFkQ/qPQAAAABJRU5ErkJggg==" style={{ width: 20, height: 20 }} />
-          </div>
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAcElEQVR4nO2WMQrAMAwD/YPok/FLSuh3lamZ0qF0b4rBhcqg8cBgW5bZF6qCu4PD0eczcXhhi+JtDb5UwSOKt1X4VhRvasA1AmgJu85wJhsRk624sL14JlsUrzLlAZcRId2IuhqYGoFrCaE8wH/mgRNeCVM6SnSVDQAAAABJRU5ErkJggg==" style={{ width: 20, height: 20, marginLeft: 10 }} ></img>
+           </div>
           Dashboard
         </div>
       </div>
