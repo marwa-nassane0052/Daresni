@@ -40,6 +40,11 @@ const columns = [
     dataIndex: 'Spécialité',
     key: 'Spécialité',
   },
+  {
+    title: 'Tarifs',
+    dataIndex: 'Tarifs',
+    key: 'Tarifs',
+  }
 ];
 
 export default function ListeDesEtudiants() {
