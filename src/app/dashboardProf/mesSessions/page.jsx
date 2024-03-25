@@ -64,8 +64,8 @@ export default function MesSession() {
                     </div>
                     <Link href={{
                         pathname: "/dashboardProf/mesGroupe",
-                        query: { sessionData: JSON.stringify(filteredSession) }
-                      }} >
+                        query: { sessionData: JSON.stringify(filteredSession)}
+                      }}>
                         <p className='text-[#000000] underline decoration-solid'>Voir plus de détails...</p>
                       </Link>
 
