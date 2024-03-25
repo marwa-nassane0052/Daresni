@@ -1,0 +1,41 @@
+.ligne{
+    height: 1px;
+    width: auto;
+  }
+body{
+    background-color:  #FAFAFF;
+}
+label{
+    margin-left: 4px;
+}
+.slideRight {
+    animation: slideRightAnimation 0.5s forwards;
+    transition: margin 0.5s;
+  }
+  
+  @keyframes slideRightAnimation {
+    0% {
+        width: 100%;
+        margin-left: 0;
+      }
+      100% {
+        width: 85%;
+        margin-left: 15%;
+      }
+    }
+    .slideLeft {
+        animation: slideLeftAnimation 0.5s forwards;
+        transition: margin 0.5s;
+      }
+      
+      @keyframes slideLeftAnimation {
+        0% {
+          width: 85%;
+          margin-left: 15%;
+        }
+        100% {
+          width: 100%;
+          margin-left:0%;
+        }
+      }
+  

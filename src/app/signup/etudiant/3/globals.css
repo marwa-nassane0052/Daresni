@@ -1,0 +1,15 @@
+.ligne{
+    height: 1px;
+    width: auto;
+  }
+body{
+    background-color:  #FAFAFF;
+}
+label{
+    margin-left: 4px;
+}
+@media only screen and (max-width: 450px) {
+    .small_screen {
+      width: 100%;
+    }
+  }
