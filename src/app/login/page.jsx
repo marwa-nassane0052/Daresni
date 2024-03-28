@@ -116,7 +116,7 @@ export default function Login() {
             </form>
             <p className="text-center text-light-gray-1 border-t border-light-gray-1 text-sm">
             Vous n'avez pas de compte ?
-              <Link className="text-purple-added" href="/signup">
+              <Link className="text-purple-added" href="../signup/etudiant">
               Inscription gratuite!
               </Link>
             </p>
